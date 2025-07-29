@@ -1,0 +1,123 @@
+/*
+const checking = (isCold)=>{
+    if(isCold){
+        const freezing = "Grab a Jacket";
+        console.log(freezing);
+    }else{
+        const hot = "Drow a Jacket";
+        console.log(freezing);
+    }
+}
+checking(false);
+
+
+ */
+// TEMPLATE LITERALS
+const myName = 'Caleb';
+const greeting = `Hello, my name is ${myName} `;
+console.log(greeting);
+
+/*
+ * Programming Quiz: Build an HTML Fragment (1-2)
+ */
+ 
+/*
+
+const cheetah = {
+    name: 'Cheetah',
+    scientificName: 'Acinonyx jubatus',
+    lifespan: '10-12 years',
+    speed: '68-75 mph',
+    diet: 'carnivore',
+    summary: 'Fastest mammal on land, the cheetah can reach speeds of 60 or perhaps even 70 miles (97 or 113 kilometers) an hour over short distances. It usually chases its prey at only about half that speed, however. After a chase, a cheetah needs half an hour to catch its breath before it can eat.',
+    fact: 'Cheetahs have “tear marks” that run from the inside corners of their eyes down to the outside edges of their mouth.'
+};
+
+// creates an animal trading card
+function createAnimalTradingCardHTML(animal) {
+    const cardHTML = `<div class="card">
+        <h3 class="name">${animal.name}</h3>
+        <img src="${animal.name}.jpg" alt="${animal.name}" class="picture">
+        <div class="description">
+            <p class="fact">${animal.fact}</p>
+            <ul class="details">
+                <li><span class="bold">Scientific Name</span>:  ${animal.scientificName}</li>
+                <li><span class="bold">Average Lifespan</span>:  ${animal.lifespan}</li>
+                <li><span class="bold">Average Speed</span>:  ${animal.speed}</li>
+                <li><span class="bold">Diet</span>:  ${animal.diet}</li>
+            </ul>
+            <p class="brief"> ${animal.summary}</p>
+        </div> 
+    </div>`;
+
+    return cardHTML;
+}
+
+console.log(createAnimalTradingCardHTML(cheetah));
+*/
+
+// DESTRUCTURING BY CONCATINATING TWO ARRAYS
+const arr1 = ["money", "Cars", "Drips"];
+const arr2 = ["Food", "Drinks", "Fruits"];
+
+const produce = [...arr1,...arr2];
+console.log(produce);
+
+const order = [20.17, 18.67, 1.50, "cheese", "eggs", "milk", "bread"];
+const [total, subtotal, tax, ...items] = order;
+console.log(total, subtotal, tax, items.join(" "));
+
+const funcPrint = (...items)=>{
+    for(let item of items){
+        console.log(item);
+    }
+}
+funcPrint("Money","Sugar","Amandazi","Umugati",234,33,22,34344,555);
+console.log(`\n _____________________________________________________________\n`);
+/*
+ * Programming Quiz: Using the Rest Parameter (1-5)
+ */
+
+// your code goes here
+function average(...numbers) {
+    if(numbers.length === 0) return 0;
+    let sum = 0;
+    for(let num of numbers){
+        sum += num; 
+    }
+    let avg = sum/numbers.length;
+    return avg;
+}
+
+console.log(average(2, 6));
+console.log(average(2, 3, 3, 5, 7, 10));
+console.log(average(7, 1432, 12, 13, 100));
+console.log(average());
+
+// REFACTORED
+
+function average(...numbers) {
+  if (numbers.length === 0) return 0;
+
+  const sum = numbers.reduce((total, num) => total + num, 0);
+  return sum / numbers.length;
+}
+
+console.log(average(2, 6));
+console.log(average(2, 3, 3, 5, 7, 10));
+console.log(average(7, 1432, 12, 13, 100));
+console.log(average());
+
+"use strict";
+function IceScream(){
+    this.scoop = 0;
+}
+
+IceScream.prototype.addScoop = function(){
+    setTimeout(function(){
+        this.scoop++;
+        console.log("Scoop added to the function "+this.scoop);
+    }, 500);
+};
+const dessert = new IceScream();
+dessert.addScoop();
