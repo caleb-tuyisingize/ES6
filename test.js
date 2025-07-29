@@ -144,7 +144,7 @@ dessert.addScoop();
 */
 
 
-
+/*
 function IceScream(){
     this.scoop = 0;
 }
@@ -159,4 +159,21 @@ IceScream.prototype.addScoop = function(){
 const dessert = new IceScream();
 dessert.addScoop();
 // console.log(dessert.scoop);
+*/
+
+// WITH ARROW FUNCTION
+
+function IceScream(){
+    this.scoops = 0;
+}
+
+IceScream.prototype.addScoops = function(){
+    setTimeout(()=>{
+        this.scoops++;
+        console.log("Scoops addded to the function "+this.scoops); //WORKS REMEMBERS THE OUTER BOSS
+    },500);
+};
+
+const dessert = new IceScream();
+dessert.addScoops();
 
