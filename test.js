@@ -153,9 +153,10 @@ IceScream.prototype.addScoop = function(){
     const cons = this;
     setTimeout(function(){
         cons.scoop++;
-        console.log("Scoop added to the function "+this.scoop);
+        console.log("Scoop added to the function "+cons.scoop);
     }, 500);
 };
 const dessert = new IceScream();
 dessert.addScoop();
+// console.log(dessert.scoop);
 
