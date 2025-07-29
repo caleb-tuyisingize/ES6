@@ -125,6 +125,7 @@ dessert.addScoop();
 */
 // SOME CORRECTIONS ADDED
 
+/*
 "use strict";
 function IceScream(){
     this.scoop = 0;
@@ -139,3 +140,22 @@ IceScream.prototype.addScoop = function(){
 };
 const dessert = new IceScream();
 dessert.addScoop();
+
+*/
+
+
+
+function IceScream(){
+    this.scoop = 0;
+}
+
+IceScream.prototype.addScoop = function(){
+    const cons = this;
+    setTimeout(function(){
+        cons.scoop++;
+        console.log("Scoop added to the function "+this.scoop);
+    }, 500);
+};
+const dessert = new IceScream();
+dessert.addScoop();
+
