@@ -108,6 +108,7 @@ console.log(average(2, 3, 3, 5, 7, 10));
 console.log(average(7, 1432, 12, 13, 100));
 console.log(average());
 
+/*
 "use strict";
 function IceScream(){
     this.scoop = 0;
@@ -116,6 +117,23 @@ function IceScream(){
 IceScream.prototype.addScoop = function(){
     setTimeout(function(){
         this.scoop++;
+        console.log("Scoop added to the function "+this.scoop);
+    }, 500);
+};
+const dessert = new IceScream();
+dessert.addScoop();
+*/
+// SOME CORRECTIONS ADDED
+
+"use strict";
+function IceScream(){
+    this.scoop = 0;
+}
+
+IceScream.prototype.addScoop = function(){
+    const con= this;
+    setTimeout(function(){
+        con.scoop++;
         console.log("Scoop added to the function "+this.scoop);
     }, 500);
 };
