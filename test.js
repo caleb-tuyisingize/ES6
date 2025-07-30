@@ -177,3 +177,12 @@ IceScream.prototype.addScoops = function(){
 const dessert = new IceScream();
 dessert.addScoops();
 
+function createSundae({scoops = 1, toppings = ['Hot Fudge']}) {
+  const scoopText = scoops === 1 ? 'scoop' : 'scoops';
+  return `Your sundae has ${scoops} ${scoopText} with ${toppings.join(' and ')} toppings.`;
+}
+
+console.log(createSundae({}));
+console.log(createSundae({scoops: 2})); 
+console.log(createSundae({scoops: 2, toppings: ['Sprinkles']})); 
+console.log(createSundae({toppings: ['Cookie Dough']})); 
