@@ -186,3 +186,41 @@ console.log(createSundae({}));
 console.log(createSundae({scoops: 2})); 
 console.log(createSundae({scoops: 2, toppings: ['Sprinkles']})); 
 console.log(createSundae({toppings: ['Cookie Dough']})); 
+
+function houseDescriptor({houseColor = 'green', shutterColors = ['red']} = {}) {
+  return `I have a ${houseColor} house with ${shutterColors.join(' and ')} shutters`;
+}
+console.log(houseDescriptor({houseColor: 'red', shutterColors: ['white', 'gray', 'pink']}));
+console.log(houseDescriptor({houseColor: 'red'}));
+console.log(houseDescriptor());
+console.log(houseDescriptor({shutterColors: ['orange', 'blue']}));
+console.log(houseDescriptor({}));
+
+function buildHouse({floors = 1, color = 'red',walls = 'brick'}={}){
+    const newFloors = floors === 1 ? "floor" : "floors";
+    return `Your house has ${floors} ${newFloors} with ${color} ${walls} walls.`;
+}
+
+
+console.log(buildHouse()); // Your house has 1 floor(s) with red brick walls.
+console.log(buildHouse({})); // Your house has 1 floor(s) with red brick walls.
+console.log(buildHouse({floors: 3, color: 'yellow'})); // Your house has 3 floor(s) with yellow brick walls.
+
+   // INHERTING THROUGH THE REGULAR FUNCTIONS
+
+   function Plane(numEngines) {
+  this.numEngines = numEngines;
+  this.enginesActive = false;
+}
+
+// methods "inherited" by all instances
+Plane.prototype.startEngines = function () {
+  console.log('starting engines...');
+  this.enginesActive = true;
+};
+
+var richardsPlane = new Plane(1);
+richardsPlane.startEngines();
+
+var jamesPlane = new Plane(4);
+jamesPlane.startEngines();
