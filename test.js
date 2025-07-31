@@ -171,7 +171,7 @@ IceScream.prototype.addScoops = function(){
     setTimeout(()=>{
         this.scoops++;
         console.log("Scoops addded to the function "+this.scoops); //WORKS REMEMBERS THE OUTER BOSS
-    },500);
+    },5000);
 };
 
 const dessert = new IceScream();
@@ -216,11 +216,14 @@ console.log(buildHouse({floors: 3, color: 'yellow'})); // Your house has 3 floor
 // methods "inherited" by all instances
 Plane.prototype.startEngines = function () {
   console.log('starting engines...');
+  setTimeout(()=>{
+      console.log(`Engine ${this.numEngines} is started`)
+    },4500)
   this.enginesActive = true;
 };
 
 var richardsPlane = new Plane(1);
 richardsPlane.startEngines();
 
-var jamesPlane = new Plane(4);
-jamesPlane.startEngines();
+// var jamesPlane = new Plane(4);
+// jamesPlane.startEngines();
