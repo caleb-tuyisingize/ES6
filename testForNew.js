@@ -51,6 +51,9 @@ class User{
     sayHello(){
         console.log(`Hello, my username is ${this.username} User: ${User.userCount}`);
     }
+    static getUserCount(){
+        console.log(`There are ${User.userCount} users online`);
+    }
 
 }
 const user1 = new User("Mevis");
@@ -61,4 +64,4 @@ const user3 = new User("Ishimwe");
 user3.sayHello();
 // console.log(user1.username);
 console.log(user1.userCount); //UNDEFINED CAUSE USERCOUNT BELONGS TO THE CLASS USER CAUSE IT'S STATIC
-console.log(User.userCount); //INSTEAD USE CLASS NOT NEW OBJECT
+console.log(User.getUserCount()); //INSTEAD USE CLASS NOT NEW OBJECT
