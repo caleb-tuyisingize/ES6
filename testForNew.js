@@ -48,15 +48,17 @@ class User{
         this.username = username;
         User.userCount++;
     }
-
+    sayHello(){
+        console.log(`Hello, my username is ${this.username} User: ${User.userCount}`);
+    }
 
 }
 const user1 = new User("Mevis");
-console.log(user1.username);
+user1.sayHello();
 const user2 = new User("Elie");
-console.log(user2.username);
+user2.sayHello();
 const user3 = new User("Ishimwe");
-console.log(user3.username);
+user3.sayHello();
 // console.log(user1.username);
 console.log(user1.userCount); //UNDEFINED CAUSE USERCOUNT BELONGS TO THE CLASS USER CAUSE IT'S STATIC
 console.log(User.userCount); //INSTEAD USE CLASS NOT NEW OBJECT
