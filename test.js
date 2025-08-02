@@ -269,3 +269,26 @@ const myMaple = new Maple(15, 5);
 myMaple.changeSeason('fall');
 myMaple.gatherSyrup();
 myMaple.changeSeason('spring');
+
+function Products(name, price){
+  this.name = name;
+  this.price = price;
+
+  this.displayProduct = function(){
+    console.log(`Product: ${this.name}`);
+    console.log(`Price: ${this.price.toFixed(2)}$`);
+  };
+  this.calculateTotal = function(saleTax){
+    return this.price + (this.price * saleTax);
+  }
+}
+const saleTax = 0.50;
+
+
+const product1 = new Products("Laptop", 130.40);
+const product2 = new Products("Phone", 430.40);
+const product3 = new Products("Carpet", 30.40);
+
+product1.displayProduct();
+product2.displayProduct();
+product3.displayProduct();
