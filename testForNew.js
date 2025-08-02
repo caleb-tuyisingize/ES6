@@ -37,4 +37,28 @@ class MathUtil{
 console.log(MathUtil.PI)
 console.log(MathUtil.getDiacmeter(23));
 console.log(MathUtil.getCircumference(10));
-console.log(MathUtil.getArea(10));
+console.log(MathUtil.getArea(10)); 
+
+//  FOR CLASS USER EXAMPLE
+class User{
+
+    static userCount = 0;
+
+    constructor(username){ // is a special method used inside a JavaScript class to initialize (set up) a new object when it's created with the new keyword
+        this.username = username;
+        User.userCount++;
+    }
+    sayHello(){
+        console.log(`Hello, my username is ${this.username} User: ${User.userCount}`);
+    }
+
+}
+const user1 = new User("Mevis");
+user1.sayHello();
+const user2 = new User("Elie");
+user2.sayHello();
+const user3 = new User("Ishimwe");
+user3.sayHello();
+// console.log(user1.username);
+console.log(user1.userCount); //UNDEFINED CAUSE USERCOUNT BELONGS TO THE CLASS USER CAUSE IT'S STATIC
+console.log(User.userCount); //INSTEAD USE CLASS NOT NEW OBJECT
