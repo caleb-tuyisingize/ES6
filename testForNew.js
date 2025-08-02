@@ -65,3 +65,39 @@ user3.sayHello();
 // console.log(user1.username);
 console.log(user1.userCount); //UNDEFINED CAUSE USERCOUNT BELONGS TO THE CLASS USER CAUSE IT'S STATIC
 console.log(User.getUserCount()); //INSTEAD USE CLASS NOT NEW OBJECT
+
+
+
+// EXAMPLE FOR EXTENDS AND SUPPER FROM UDACITY
+
+/*
+ * Programming Quiz: Building Classes and Subclasses (2-3)
+ */
+
+class Vehicle {
+	constructor(color = 'blue', wheels = 4, horn = 'beep beep') {
+		this.color = color;
+		this.wheels = wheels;
+		this.horn = horn;
+	}
+
+	honkHorn() {
+		console.log(this.horn);
+	}
+	
+
+}
+	class Bicycle extends Vehicle{
+	    constructor(color = "blue", wheels = 2, horn = "honk honk"){
+	        super(color,wheels,horn)
+	    }
+	};
+
+// your code goes here
+
+
+const myVehicle = new Vehicle();
+myVehicle.honkHorn(); // beep beep
+const myBike = new Bicycle();
+myBike.honkHorn(); // honk honk
+
