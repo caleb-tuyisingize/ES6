@@ -21,7 +21,7 @@ new Promise(function () {
 });
 
 const mySundae = new Promise(function (resolve, reject) {
-    resolve("Surely it is");
+    reject("Surely it is");
 });
 mySundae.then(function(sundae) {
     console.log(`Time to eat my delicious ${sundae}`);
@@ -29,5 +29,9 @@ mySundae.then(function(sundae) {
     console.log(msg);
     self.goCry(); // not a real method
 });
+mySundae.catch((err)=>{
+    console.error("Refusesed");
+    
+})
 </script>
 </html>
