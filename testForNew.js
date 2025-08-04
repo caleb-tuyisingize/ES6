@@ -125,3 +125,38 @@ const arrayIterator = digits[Symbol.iterator]();
 console.log(arrayIterator.next());
 console.log(arrayIterator.next());
 console.log(arrayIterator.next());
+
+ let uniqueFlavors = new WeakSet();
+ 
+ let flavor1 = { flavor: 'chocolate' };
+ let flavor2 = { flavor: 'milk' };
+ uniqueFlavors.add(flavor1);
+ uniqueFlavors.add(flavor2);
+ uniqueFlavors.add(flavor1);
+for(let items of uniqueFlavors){
+    console.log(items)
+}
+// Online Javascript Editor for free
+// Write, Edit and Run your Javascript code using JS Online Compiler
+
+
+const newObj =new Map();
+newObj.set("User1",{
+    name:"Aime",
+    name:"Samuel",
+    Age:23,
+    years:23
+});
+newObj.set("User2",{
+    name:"Aline",
+    name:"Cuz",
+    name:"Samuella",
+    Age:22,
+    years:45
+});
+
+console.log(newObj);
+
+
+
+
