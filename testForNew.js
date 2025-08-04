@@ -157,6 +157,29 @@ newObj.set("User2",{
 
 console.log(newObj);
 
+/*
+// Online Javascript Editor for free
+// Write, Edit and Run your Javascript code using JS Online Compiler
 
+const obj = {
+    name:"Aime",
+    name:"Aime",
+    name:"Samuel",
+    Age:23,
+    years:23
+};
+const obj2 = {
+    name:"Aline",
+    name:"Cuz",
+    name:"Samuella",
+    Age:22,
+    years:45
+};
+const newObj =new Map();
+newObj.set("User1",obj);
+newObj.set("User2",obj);
+
+console.log(newObj);
+*/
 
 
