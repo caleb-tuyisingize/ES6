@@ -126,16 +126,16 @@ console.log(arrayIterator.next());
 console.log(arrayIterator.next());
 console.log(arrayIterator.next());
 
- let uniqueFlavors = new WeakSet();
+//  let uniqueFlavors = new WeakSet();
  
- let flavor1 = { flavor: 'chocolate' };
- let flavor2 = { flavor: 'milk' };
- uniqueFlavors.add(flavor1);
- uniqueFlavors.add(flavor2);
- uniqueFlavors.add(flavor1);
-for(let items of uniqueFlavors){
-    console.log(items)
-}
+//  let flavor1 = { flavor: 'chocolate' };
+//  let flavor2 = { flavor: 'milk' };
+//  uniqueFlavors.add(flavor1);
+//  uniqueFlavors.add(flavor2);
+//  uniqueFlavors.add(flavor1);
+// for(let items of uniqueFlavors){
+//     console.log(items)
+// }
 // Online Javascript Editor for free
 // Write, Edit and Run your Javascript code using JS Online Compiler
 
@@ -154,8 +154,10 @@ newObj.set("User2",{
     Age:22,
     years:45
 });
-
-console.log(newObj);
+const monkey = newObj.keys();
+console.log(monkey.next());
+console.log(monkey.next());
+console.log(monkey.next());
 
 /*
 // Online Javascript Editor for free
@@ -182,4 +184,14 @@ newObj.set("User2",obj);
 console.log(newObj);
 */
 
+const members = new Map();
 
+members.set('Evelyn', 75.68);
+members.set('Liam', 20.16);
+members.set('Sophia', 0);
+members.set('Marcus', 10.25);
+
+// members.forEach((key, values) => console.log(`${key}: ${values}`));
+for(let [keys, values] of members){
+    console.log(keys,values)
+}
