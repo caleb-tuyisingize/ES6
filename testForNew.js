@@ -196,4 +196,15 @@ for(let [keys, values] of members){
     console.log(keys,values)
 }
 
+function createAsynchProxy(data){
+    return new Proxy({},{
+        
+        get(_,prop){
+            return data.then(resolve => resolve[prop]);
+        }
 
+    });
+}
+const data1 = Promise.resolve({name:"barinda",age:23});
+const proxy = createAsynchProxy(data1);
+proxy.age.then(console.log)
