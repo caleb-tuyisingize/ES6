@@ -31,3 +31,30 @@ Promise.all([
 ]).then((messages)=>{
     console.log(messages);
 })
+
+//MIGRATTING THE NORMAL FUNCTION TO PROMISES FOR PROBLEM SOLVING
+const useLeft = false;
+const userWatchingCatMem = false;
+
+function watchinMemes(callBacks, errorCallBacks){
+    if(useLeft){
+        callBacks({
+            name: "User Left",
+            message: "Mevis Channel :-)"
+    })
+    }else if(userWatchingCatMem){ 
+        errorCallBacks({
+            name: "User Left",
+            message: "Mevis Channel :- Cat"
+        })
+    }else{
+        callBacks("Thumbs UP and subscribe");
+    }
+
+}
+
+watchinMemes((message)=>{
+    console.log(`The guy ${message.name} is on ${message.message} `);
+},(err) =>{
+    console.log(`Wow ${err}`);
+})
