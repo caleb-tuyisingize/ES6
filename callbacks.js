@@ -6,13 +6,30 @@ const posts = [
 
 let div = document.querySelector(".data");
 
+let outPut = "";
+let counter = 0;
 let getPost = ()=>{
- setTimeout(()=>{
-    let outPut = "";
-  posts.forEach((post, index)=>{
-   outPut +=`<li>${index}: ${post.title}</li>`;
-})
-div.innerHTML =outPut;
-},1000);
+    if(counter < posts.length){
+    setTimeout(()=>{
+        const post = posts[counter];
+            posts.forEach((post, index)=>{
+                    outPut +=`<li>${counter}: ${post.title}</li>`;
+            })
+            div.innerHTML =outPut;
+            counter++;
+            getPost();
+        },1000);
+    }
 }
-getPost();
+
+
+function createPost(post, callback){
+    setTimeout(()=>{
+        posts.push(post)
+        callback();
+    },2000);
+}
+
+
+
+createPost({title: "Post 3", body: "This is Post three"},getPost);
