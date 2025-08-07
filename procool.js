@@ -33,10 +33,12 @@ Promise.all([
 })
 
 //MIGRATTING THE NORMAL FUNCTION TO PROMISES FOR PROBLEM SOLVING
+
+/*
 const useLeft = false;
 const userWatchingCatMem = false;
 
-function watchinMemes(callBacks, errorCallBacks){
+function watchinMemes(){
     if(useLeft){
         callBacks({
             name: "User Left",
@@ -56,5 +58,37 @@ function watchinMemes(callBacks, errorCallBacks){
 watchinMemes((message)=>{
     console.log(`The guy ${message.name} is on ${message.message} `);
 },(err) =>{
+    console.log(`Wow ${err}`);
+})
+
+*/
+
+const useLeft = false;
+const userWatchingCatMem = false;
+
+function watchinMemes(){
+    return new Promise((resolve, reject)=>{
+    if(useLeft){
+        resolve({
+            name: "User Left",
+            message: "Mevis Channel :-)"
+    })
+    }else if(userWatchingCatMem){ 
+        reject({
+            name: "User Left",
+            message: "Mevis Channel :- Cat"
+        })
+    }else{
+        resolve("Thumbs UP and subscribe");
+    }
+
+    })
+
+
+}
+
+watchinMemes().then((message)=>{
+    console.log(`The guy ${message.name} is on ${message.message} `);
+}).catch((err) =>{
     console.log(`Wow ${err}`);
 })
