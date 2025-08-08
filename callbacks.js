@@ -20,13 +20,30 @@ let getPost = ()=>{
 
 
 
-function createPost(post, callback){
+function createPost(post){
+    return new Promise((resolve, reject)=>{
     setTimeout(()=>{
         posts.push(post)
-        callback();
+        const error = true;
+        if(!error){
+            resolve();
+        }else{
+            reject("Error: something went wrong");
+        }
     },2000);
+    })
+    
+    
 }
 
 
 
-createPost({title: "Post 3", body: "This is Post three"},getPost);
+
+createPost({title: "Post 3", body: "This is Post three"})
+.then(()=>{
+getPost()
+})
+.catch(err=>{
+    console.log(err)
+}
+)
