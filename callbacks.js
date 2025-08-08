@@ -9,18 +9,15 @@ let div = document.querySelector(".data");
 let outPut = "";
 let counter = 0;
 let getPost = ()=>{
-    if(counter < posts.length){
     setTimeout(()=>{
         const post = posts[counter];
             posts.forEach((post, index)=>{
                     outPut +=`<li>${counter}: ${post.title}</li>`;
             })
             div.innerHTML =outPut;
-            counter++;
-            getPost();
         },1000);
     }
-}
+
 
 
 function createPost(post, callback){
