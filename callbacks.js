@@ -36,7 +36,7 @@ function createPost(post){
     
 }
 
-createPost({title: "Post 3", body: "This is Post three"})
+// createPost({title: "Post 3", body: "This is Post three"})
 
 /*
 .then(()=>{
@@ -47,12 +47,38 @@ getPost()
 }
 )
 */
+ 
+// Promise.all([]) and also the use of fetch API
 
+/*
 const promise1= Promise.resolve("New promise as the first");
 const promise2 = 10;
 const promise3 = new Promise((resolve, reject)=> setTimeout(resolve("Promise Solved"),3000,"Goodbye"));
 const promise4 = fetch("https://jsonplaceholder.typicode.com/users").then(res => res.json());
+*/
 
+// ASYNC AWAIT Async / Await
+
+/*
+async function popin(){
+await createPost({title: "Post 3", body: "This is Post three"});
+getPost();
+}
+popin()
+*/
+
+//Async / Await / With Fetch
+
+async function fetchData(){
+    const datas = await fetch("https://jsonplaceholder.typicode.com/users");
+    const res = await datas.json();
+    console.log(res)
+    
+}
+fetchData();
+
+
+/*
 Promise.all([
     promise1,
     promise2,
@@ -62,3 +88,8 @@ Promise.all([
 .then((values)=>{
     console.log(values)
 })
+
+*/
+
+
+
