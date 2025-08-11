@@ -7,23 +7,22 @@ function getHome(){
   users = JSON.parse(JSON.stringify(data));
   let table = document.getElementById("tbl");
     let tr = document.createElement("tr");
-  users.map((a)=>{
-    tr.innerHTML = `
-    <td>${a.id}</td>
-    <td>${a.name}</td>
-    <td>${a.email}</td>
-    <td>${a.address.street}</td>
+    users.forEach((pls)=>{
+            tr.innerHTML = `
+            <td>${pls.id}</td>
+            <td>${pls.name}</td>
+            <td>${pls.email}</td>
+            <td>${pls.address.street}</td>
+            `;
+            
+            console.table(pls);
+            
+        })
+        table.appendChild(tr);
 
-    
-    `;
-    
-    table.appendChild(tr);
-});
-  
-                                 
-  console.log(users);
-                      
- })
+        
+        
+    })
  .catch((err) =>{
  theDiv.innerHTML = "Failed To load the data";
 })
