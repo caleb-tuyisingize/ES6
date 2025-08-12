@@ -1,9 +1,14 @@
 var richard = {status: 'looking for work'};
 const handler = {
     get(target, propName){
+/*
         console.log(target);
         console.log(propName);
         return target[propName];
+*/
+
+ return `If he is ${target[propName]} means he is following many leads, so you should offer a contract as soon as possible`;
+ 
     }
 }
 var agent = new Proxy(richard, handler); 
