@@ -3,6 +3,7 @@ const handler = {
     get(target, propName){
         console.log(target);
         console.log(propName);
+        return target[propName];
     }
 }
 var agent = new Proxy(richard, handler); 
