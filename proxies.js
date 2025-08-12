@@ -54,3 +54,16 @@ var obj1 = {
 obj1.age;
 obj1.weight = 200;
 console.log(obj1);
+
+
+//MIGRATTING IN PROXIES
+const obj2 = {
+    age: 23,
+    height: 5
+}
+const proxies = new Proxy(obj2,{
+    get(target, properties){
+        console.log(`The term is ${properties} and the value is ${target[properties]}`)
+    }
+});
+proxies.age;
