@@ -1,4 +1,10 @@
 var richard = {status: 'looking for work'};
-var agent = new Proxy(richard, {});
+const handler = {
+    get(target, propName){
+        console.log(target);
+        console.log(propName);
+    }
+}
+var agent = new Proxy(richard, handler); 
 
-console.log(agent.status); // returns 'looking for work'
+console.log(agent.status); // logs out the richard object (not the agent object!) and the name of the property being accessed (`status`)
