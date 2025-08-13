@@ -4,10 +4,35 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Comments</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
 <body>
-    <div class="div bg-gray-900 space-y-5 text-white mt-12 rounded-[30px] mx-auto w-[90%] p-12"></div>
+    <div class="lg:block justify-between w-[99%] hidden">
+        <div class="log flex space-x-2 lg:none">
+
+            <div><span>Home</span></div>
+            <div><span>service</span></div>
+            <div><span>About us</span></div>
+        </div>
+            <div class="ml-auto lg:none"><span class="ml-auto">Login</span>
+                <span class="ml-auto">Signup</span>
+            </div>
+    </div>
+<div class="p-5 lg:hidden top-0 bg-white fixed w-full">  <strong class="text-4xl flex justify-between"><span>TEST</span> <i id="menu" class="fa fa-bars"></i></strong></div>
+    <div id="menus" class="hidden lg:hidden fixed grid top-0 z-index-1 w-[92%] h-[600px] grid-cols-1 bg-green-900 text-white font-bold p-3">
+        <div class="log space-y-2 lg:none">
+          <strong class="text-4xl flex justify-between"><span>TEST</span> <i id="cancel" class="fa fa-times"></i></strong>
+            <div><span>Home</span></div>
+            <div><span>service</span></div>
+            <div><span>About us</span></div>
+        </div>
+        
+            <div class=""><span>Login</span>
+                <span class="">Signup</span>
+            </div>
+    </div>
+    <div class="div grid w-full grid-cols-1 bg-gray-100 gap-10 text-white mt-12 rounded-[30px] mx-auto lg:w-[90%] p-12 sm:grid sm:grid-cols-2  md:grid md:grid-cols-2 lg:grid lg:grid-cols-2"></div>
 </body>
 <script src="comments.js"></script>
 </html>
