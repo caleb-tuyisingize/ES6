@@ -8,31 +8,39 @@
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
 <body>
-    <div class="lg:block justify-between w-[99%] hidden">
-        <div class="log flex space-x-2 lg:none">
+    <div id="navs" class="group lg:flex hover:bg-green-900 h-[80px] easy-in-out duration-200 justify-between w-[99%] hidden p-5 pt-6 top-0 bg-white lg:z-index-1 fixed w-full">
+        <div class="log flex space-x-[100px] lg:none">
 
-            <div><span>Home</span></div>
-            <div><span>service</span></div>
-            <div><span>About us</span></div>
+            <div  class="text-center space-x-4 hover:scale-x-[1.2] hover:scale-y-[1.2] cursor-pointer hover:easy-in-out hover:duration-200 px-3 text-2xl font-bold group-hover:text-white rounded-lg" onclick="home()"><span>Home</span></div>
+            <div class="text-center space-x-4 hover:scale-x-[1.2] hover:scale-y-[1.2] cursor-pointer hover:easy-in-out hover:duration-200 px-3 text-2xl font-bold group-hover:text-white rounded-lg"><span>service</span></div>
+            <div class="text-center space-x-4 hover:scale-x-[1.2] hover:scale-y-[1.2] cursor-pointer hover:easy-in-out hover:duration-200 px-3 text-2xl font-bold group-hover:text-white rounded-lg"><span>About us</span></div>
+           <a href="#contact"><div class="text-center space-x-4 hover:scale-x-[1.2] hover:scale-y-[1.2] cursor-pointer hover:easy-in-out hover:duration-200 px-3 text-2xl font-bold group-hover:text-white rounded-lg" onclick="contact()"><span>Contact</span></div></a>
         </div>
-            <div class="ml-auto lg:none"><span class="ml-auto">Login</span>
-                <span class="ml-auto">Signup</span>
+            <div class="ml-auto lg:none space-x-[70px] flex">
+                <div class="ml-auto text-center space-x-4 hover:scale-x-[1.2] hover:scale-y-[1.2] cursor-pointer hover:easy-in-out hover:duration-200 px-3 text-2xl font-bold group-hover:text-blue-200 rounded-lg">Login</div>
+                <div class="ml-auto text-center space-x-4 hover:scale-x-[1.2] hover:scale-y-[1.2] cursor-pointer hover:easy-in-out hover:duration-200 px-3 text-2xl font-bold group-hover:text-blue-200 rounded-lg">Signup</div>
             </div>
     </div>
 <div class="p-5 lg:hidden top-0 bg-white fixed w-full">  <strong class="text-4xl flex justify-between"><span>TEST</span> <i id="menu" class="fa fa-bars"></i></strong></div>
-    <div id="menus" class="hidden lg:hidden fixed grid top-0 z-index-1 w-[92%] h-[600px] grid-cols-1 bg-green-900 text-white font-bold p-3">
+    <div id="menus" class="hidden space-y-2 lg:hidden fixed grid top-0 z-index-1 w-[100%] h-[440px] shadow-[23px] grid-cols-1 bg-green-900 text-white font-bold p-3">
         <div class="log space-y-2 lg:none">
           <strong class="text-4xl flex justify-between"><span>TEST</span> <i id="cancel" class="fa fa-times"></i></strong>
-            <div><span>Home</span></div>
-            <div><span>service</span></div>
-            <div><span>About us</span></div>
-        </div>
-        
-            <div class=""><span>Login</span>
-                <span class="">Signup</span>
+            <div class="text-center space-x-4 even:bg-green-800 odd:bg-green-900 p-3 rounded-lg text-3xl"><span>Home</span></div>
+            <div class="text-center space-x-4 even:bg-green-800 odd:bg-green-900 p-3 rounded-lg text-3xl"><span>service</span></div>
+            <div class="text-center space-x-4 even:bg-green-800 odd:bg-green-900 p-3 rounded-lg text-3xl" onclick="contact()"><span>Contact us</span></div>
+            
+            <div  class="text-center space-x-4 even:bg-green-800 odd:bg-green-900 p-3 rounded-lg text-3xl">
+                <span class="border-r-2 px-5">Login</span>
+                <span>Signup</span>
             </div>
+        </div>
     </div>
-    <div class="div grid w-full grid-cols-1 bg-gray-100 gap-10 text-white mt-12 rounded-[30px] mx-auto lg:w-[90%] p-12 sm:grid sm:grid-cols-2  md:grid md:grid-cols-2 lg:grid lg:grid-cols-2"></div>
+    <div class="mains">
+
+        <div class="div grid w-full grid-cols-1 bg-gray-100 gap-10 text-white mt-12 rounded-[30px] mx-auto lg:w-[99%] lg:content-center p-12 sm:grid sm:  md:grid lg:grid"></div>
+    </div>
+    <br>
+    <div class="w-full fixed  lg:h-20 bg-green-900 text-white text-3xl text-center content-center bottom-0"> &copy;2025 Caleb Mevis</div>
 </body>
 <script src="comments.js"></script>
 </html>
