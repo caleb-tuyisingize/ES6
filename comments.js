@@ -68,7 +68,7 @@ const contact = ()=>{
     navs.classList.remove("fixed");
     appendedDivs.forEach((a)=> a.remove());
     div.innerHTML = `
-     <div id="contact" class="bg-[url(https://scontent.fnbo18-1.fna.fbcdn.net/v/t39.30808-6/515513512_1038330208515213_2800585628437775038_n.jpg?_nc_cat=100&ccb=1-7&_nc_sid=6ee11a&_nc_eui2=AeHVqJ1zNXB4Vu5QVmDG-aNs2EWR09iUiXLYRZHT2JSJcn_3R88T8dbpKxbYniC21Qbq4SfJA8QEFRpCwilZMElz&_nc_ohc=LM5ioFJ-LoIQ7kNvwHnqKY2&_nc_oc=Adnehp618pbXIFtU1dTXqcCeNoPiRA7PntdKXg4u4i6Rm8NSOiq6BhgEYUIpXGKrwrA&_nc_zt=23&_nc_ht=scontent.fnbo18-1.fna&_nc_gid=gfQhLTjOeXm3nuXTDxOTsg&oh=00_AfVMPFu5OJyWYs5wXu-snbwJi10OG8PAnGCWYthdauoW_w&oe=68A51AE5)] w-[100%] h-[600px] bg-cover bg-no-repeat bg-fixed bg-center scroll-auto text-center pt-12 lg:w-[100%] lg:mx-auto lg:flex lg:relative lg:z-index-0" >
+     <div id="contact" class="bg-[url(https://scontent.fnbo18-1.fna.fbcdn.net/v/t39.30808-6/515513512_1038330208515213_2800585628437775038_n.jpg?_nc_cat=100&ccb=1-7&_nc_sid=6ee11a&_nc_eui2=AeHVqJ1zNXB4Vu5QVmDG-aNs2EWR09iUiXLYRZHT2JSJcn_3R88T8dbpKxbYniC21Qbq4SfJA8QEFRpCwilZMElz&_nc_ohc=LM5ioFJ-LoIQ7kNvwHnqKY2&_nc_oc=Adnehp618pbXIFtU1dTXqcCeNoPiRA7PntdKXg4u4i6Rm8NSOiq6BhgEYUIpXGKrwrA&_nc_zt=23&_nc_ht=scontent.fnbo18-1.fna&_nc_gid=gfQhLTjOeXm3nuXTDxOTsg&oh=00_AfVMPFu5OJyWYs5wXu-snbwJi10OG8PAnGCWYthdauoW_w&oe=68A51AE5)] w-[100%] h-[600px] lg:h-[400px] lg:top-[-60px] bg-cover bg-no-repeat bg-fixed bg-center scroll-auto text-center pt-12 lg:w-[100%] lg:mx-auto lg:flex lg:relative lg:z-index-0" >
 
   <div id="rep"  class="lg:fixed w-full mt-20">
 
@@ -81,10 +81,10 @@ const contact = ()=>{
     <i class="fab fa-x"></i>
   </div>
   </div>
-    <div class="h-[500px] left-0 mt-[200px] absolute  bg-white w-full lg:w-[30%] lg:mt-0 lg:top-[-48px] lg:h-[600px] lg:relative lg:z-index-0">
+    <div class="h-[500px] left-0 px-4 mt-[200px] absolute  bg-white w-full lg:w-[30%] lg:mt-0 lg:top-[-48px] lg:h-[400px] lg:relative lg:z-index-0">
       <h1 class="font-bold text-gray-900 text-4xl mt-10">Contact Us</h1>
 
-    <div class="flex mx-auto mt-[10px] lg:mt-[40px] space-x-2 w-full h-20 lg:w-[200px] font-bold items-center">
+    <div class="flex mx-auto mt-[10px] lg:mt-[40px] space-x-2 w-full h-20 lg:h-8 lg:w-[200px] font-bold items-center">
       <div class="rounded-full bg-blue-300 w-12 hue-rotate-90 text-center p-1 text-gray-900 text-4xl ">
         <i class="fab fa-instagram"></i>
       </div>
@@ -95,7 +95,7 @@ const contact = ()=>{
     </div>
        
        
-    <div class="flex mx-auto mt-[10px] lg:mt-[40px] space-x-2 w-full h-20 lg:w-[200px] font-bold items-center">
+    <div class="flex lg:h-8 mx-auto mt-[10px] lg:mt-[40px] space-x-2 w-full h-20 lg:w-[200px] font-bold items-center">
       <div class="rounded-full bg-blue-300 w-12 hue-rotate-90 text-center p-1 text-gray-900 text-4xl ">
         <i class="fab fa-facebook"></i>
       </div>
@@ -105,7 +105,7 @@ const contact = ()=>{
       </div>
     </div>
 
-        <div class="flex mx-auto mt-[10px] lg:mt-[40px] space-x-2 w-full h-20 lg:w-[200px] font-bold items-center">
+        <div class="flex lg:h-8 mx-auto mt-[10px] lg:mt-[40px] space-x-2 w-full h-20 lg:w-[200px] font-bold items-center">
       <div class="rounded-full bg-blue-300 w-12 hue-rotate-90 text-center p-2 text-gray-900 text-4xl ">
         <i class="fab fa-x"></i>
       </div>
@@ -115,7 +115,7 @@ const contact = ()=>{
       </div>
     </div>
 
-        <div class="flex mx-auto mt-[10px] lg:mt-[40px] space-x-2 w-full h-20 lg:w-[200px] font-bold items-center">
+        <div class="flex lg:h-8 mx-auto mt-[10px] lg:mt-[40px] space-x-2 w-full h-20 lg:w-[200px] font-bold items-center">
       <div class="rounded-full bg-blue-300 w-12 hue-rotate-90 text-center p-2 text-gray-900 text-4xl ">
         <i class="fab fa-linkedin"></i>
       </div>
