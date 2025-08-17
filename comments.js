@@ -70,7 +70,7 @@ const contact = ()=>{
     div.innerHTML = `
      <div id="contact" class="bg-[url(https://scontent.fnbo18-1.fna.fbcdn.net/v/t39.30808-6/515513512_1038330208515213_2800585628437775038_n.jpg?_nc_cat=100&ccb=1-7&_nc_sid=6ee11a&_nc_eui2=AeHVqJ1zNXB4Vu5QVmDG-aNs2EWR09iUiXLYRZHT2JSJcn_3R88T8dbpKxbYniC21Qbq4SfJA8QEFRpCwilZMElz&_nc_ohc=LM5ioFJ-LoIQ7kNvwHnqKY2&_nc_oc=Adnehp618pbXIFtU1dTXqcCeNoPiRA7PntdKXg4u4i6Rm8NSOiq6BhgEYUIpXGKrwrA&_nc_zt=23&_nc_ht=scontent.fnbo18-1.fna&_nc_gid=gfQhLTjOeXm3nuXTDxOTsg&oh=00_AfVMPFu5OJyWYs5wXu-snbwJi10OG8PAnGCWYthdauoW_w&oe=68A51AE5)] w-[100%] h-[600px] lg:h-[400px] lg:top-[-60px] bg-cover bg-no-repeat bg-fixed bg-center scroll-auto text-center pt-12 lg:w-[100%] lg:mx-auto lg:flex lg:relative lg:z-index-0" >
 
-  <div id="rep"  class="lg:fixed w-full mt-20">
+  <div id="rep"  class="lg:fixed good w-full mt-20">
 
   <h1 class="text-blue-200 font-bold text-4xl">Contact Us</h1>
   <p class="text-white">Caleb Mevis</p><br>
