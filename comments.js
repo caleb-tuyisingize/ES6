@@ -6,7 +6,7 @@ const fakePromise = new Promise((resolve, reject)=>{
     if(API){
         resolve(API)
     }else{
-        reject("Error occured");
+        reject("Error occured line on the line told");
     }
 })
 .then((a)=> {
