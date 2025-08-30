@@ -29,7 +29,7 @@ const mySundae = new Promise(function (resolve, reject) {
 mySundae.then(function(sundae) {
     console.log(`Time to eat my delicious ${sundae}`);
 }, function(msg) {
-    console.log(msg);kiolijioj
+    console.log(msg);
     self.goCry(); // not a real method
 });
 mySundae.catch((err)=>{
@@ -37,15 +37,15 @@ mySundae.catch((err)=>{
     
 })
 const string = "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Libero magni dolorem assumenda placeat aliquid illo possimus dignissimos a, ratione nulla veniam esse, voluptatem iure recusandae reprehenderit culpa! Iusto, nobis necessitatibus?";
+let textsflow = document.getElementById("textsflow").innerText = "";
 
 const spelled = string.split("");
 spelled.forEach((item, index) => {
     setTimeout(()=>{
-       console.log(item);
+    textsflow +=item;
     },index * 100);
 })
-console.log(newStr)
-const textsflow = document.getElementById("textsflow").innerText;
+// console.log(newStr)
 console.log(textsflow)
 </script>
 </html>
