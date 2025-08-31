@@ -42,10 +42,11 @@ let textsflow = document.getElementById("textsflow");
 const spelled = string.split("");
 spelled.forEach((item, index) => {
     setTimeout(()=>{
+        if()
         if(item === " "){
             textsflow.innerText += "_";
         }else{
-            textsflow.innerText += item;
+            textsflow.innerText += item+"\n";
         }
     // console.log(item)
     },index * 100);
