@@ -292,3 +292,11 @@ const product3 = new Products("Carpet", 30.40);
 product1.displayProduct();
 product2.displayProduct();
 product3.displayProduct();
+
+
+function mevis(n){
+    console.log("Calculating...");
+    return n * n;
+}
+console.log(mevis(5));
+console.log(mevis(5)); //One which was stored in the cache memory
