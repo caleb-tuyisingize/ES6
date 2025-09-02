@@ -25,3 +25,7 @@ const nums = numbers();
 
 console.log(typeof nums[Symbol.iterator])
 console.log(nums[Symbol.iterator]() === nums)
+
+for(let sol of nums){
+    console.log(sol)
+}
