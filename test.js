@@ -287,7 +287,7 @@ const saleTax = 0.50;
 
 const product1 = new Products("Laptop item", 130.40);
 const product2 = new Products("Phone", 430.40);
-const product3 = new Products("Carpet", 30.40);
+const product3 = new Products("Carpetano", 30.40);
 
 product1.displayProduct();
 product2.displayProduct();
