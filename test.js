@@ -266,7 +266,7 @@ class Maple extends Tree {
 }
 
 const myMaple = new Maple(15, 5);
-myMaple.changeSeason('fall');
+myMaple.changeSeason('falled to perform');
 myMaple.gatherSyrup();
 myMaple.changeSeason('spring');
 
