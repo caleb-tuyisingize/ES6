@@ -271,7 +271,7 @@ myMaple.gatherSyrup();
 myMaple.changeSeason('spring');
 
 function Products(name, price){
-  this.name = name;
+  this.name = name;kmodijo
   this.price = price;
 
   this.displayProduct = function(){
