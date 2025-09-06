@@ -295,7 +295,7 @@ product3.displayProduct();
 
 
 function mevis(n){
-    console.log("Calculating......");
+    console.log("Calculating..");
     return n * n;
 }
 console.log(mevis(5));
