@@ -7,7 +7,7 @@ const proxyStudent = new Proxy(student, {
     },
   set(target, property, value) {
     if (property === "age" && typeof value !== "number") {
-      throw new Error("Age must be a number");
+      throw new Error("Age must be a number and is not passed as a number");
     }
     target[property] = value;
     return true;
