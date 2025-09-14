@@ -1,12 +1,15 @@
 class Many{
-    constructor(maning){
-        this.maning = maning;
-        return this.maning;
-        return this;
+    constructor(name, age, favPet, favDrink, occupation){
+        this.name = name;
+        this.age = age;
+        this.favPet = favPet;
+        this.favDrink = favDrink;
+        this.occupation = occupation;
+    }
+
+    greet(){
+     console.log(`Hello My name is ${this.name} am  ${this.age} years old, I like  ${this.favPet} and also I like to drink  ${this.favDrink} am currently in ${this.occupation}`);
     }
 }
-// const valueri = new Many("Man")
-Many.prototype.valueri = function(Someone){
-    
-}
-console.log(Many.valueri)
+let name = prompt("Inter your name here:","");
+console.log()
