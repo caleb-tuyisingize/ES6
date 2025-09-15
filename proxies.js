@@ -39,7 +39,7 @@ console.log(agent); // logs out the richard object (not t
 
 var obj1 = {
     _age : 25,
-    _name: "Money",
+    _name: "Money Of making things",
     _height: 4,
     get age(){
         console.log(`getting the "Age" property`);
