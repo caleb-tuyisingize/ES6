@@ -24,10 +24,14 @@ const getVideo2 = new Promise((resolve, reject)=>{
 const getVideo3 = new Promise((resolve, reject)=>{
     resolve("Video 3 resolved");
 });
+const getVideo4 = new Promise((resolve, reject)=>{
+    resolve("Video 4 resolved");
+});
 Promise.all([
     getVideo1,
     getVideo2,
-    getVideo3
+    getVideo3,
+    getVideo4,
 ]).then((messages)=>{
     console.log(messages);
 })
