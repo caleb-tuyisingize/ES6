@@ -285,7 +285,7 @@ function Products(name, price){
 const saleTax = 0.50;
 
 
-const product1 = new Products("Laptop item", 130.40);
+const product1 = new Products("Laptop to be sold item", 170.40);
 const product2 = new Products("Phones shop", 430.40);
 const product3 = new Products("Carpetano", 30.40);
 const product4 = new Products("Carpetano", 30.40);
