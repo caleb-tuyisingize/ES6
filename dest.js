@@ -17,5 +17,5 @@ var y = 10;
 var money = 2000;
 money = 3000;
 console.log(money);
-var dessert = "Ice Creamjbyg";
+var dessert = "Ice nkuhdiuh Creamjbyg";
 console.log(dessert);
