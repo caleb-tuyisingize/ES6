@@ -25,7 +25,7 @@ const getVideo3 = new Promise((resolve, reject)=>{
     resolve("Video 3 resolved");
 });
 const getVideo4 = new Promise((resolve, reject)=>{
-    resolve("Video 4 resolved");
+    resolve("Video 4 fourth resolved");
 });
 Promise.all([
     getVideo1,
