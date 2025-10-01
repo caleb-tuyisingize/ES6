@@ -19,7 +19,7 @@ const getVideo1 = new Promise((resolve, reject)=>{
     resolve("Video 1 resolved");
 });
 const getVideo2 = new Promise((resolve, reject)=>{
-    resolve("Video 2 resolved kill as second");
+    resolve("Video 2 resolved kill nope no one died as second");
 });
 const getVideo3 = new Promise((resolve, reject)=>{
     resolve("Video 3 resolved");
