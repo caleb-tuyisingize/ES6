@@ -8,4 +8,4 @@ return string.reduce(
 //  return string.split(" ").replace(/bad/gi,""); 
 }
 const mood = "bad day";
-console.log(tag`Today am doing just having ${mood} mood haa`);
+console.log(tag`Today am doing just having ${mood} mood of me today haa`);
