@@ -14,7 +14,7 @@ class Student extends Person{
         this.course = course;
     }
     study(){
-      console.log(`And ${this.name} is studying ${this.course}`);
+      console.log(`And ${this.name} is currently studying ${this.course}`);
     }
 }
 const userGreet = new Person("Caleb", 23, "Database Adminstrator");
