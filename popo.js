@@ -17,6 +17,6 @@ const fakePromise = new Promise((resolve, reject)=>{
         fetch("https://jsonplaceholder.typicode.com/comments").then(a=> a.json()).then(a=> console.log(a));
     }, 1000);
 });
-// fakePromise.then((message)=>{
-//     console.log(`The promise said ${message}`)
-// }).catch(err => console.error(`The promise dennied by ${err}`));
+fakePromise.then((message)=>{
+    console.log(`The promise said ${message}`)
+}).catch(err => console.error(`The promise dennied by ${err}`));
