@@ -19,6 +19,7 @@ function *numbers(){
     yield 4;
     yield 2;
     yield 19;
+    yield 20;
 }
 
 const nums = numbers();
